@@ -10,7 +10,7 @@ body{
 
 
 .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 
@@ -67,14 +67,18 @@ p{
 /* Title Image */
 
 .title-image{
-    width: 60%;
+    width: 25%;
     transform: rotate(25deg);
+    position: absolute;
 }
 
 /* Features Section */
 
 #features{
     padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
 }
 
 .feature-box{
@@ -95,9 +99,8 @@ p{
 /* Testimonial Section */
 
 #testimonials{
-    background-color: #ef8172;
+    background-color: #ff4c68;
     color: #fff;
-    padding: 7% 15%;
     text-align: center;
 }
 
@@ -107,10 +110,13 @@ p{
     margin: 20px;
 }
 
+.carousel-item{
+    padding: 7% 15%;
+}
 /* Press Section */
 
 #press{
-    background-color: #ef8172;
+    background-color: #ff4c68;
     text-align: center;
     padding-bottom: 3%;
 }
@@ -119,3 +125,65 @@ p{
     width: 15%;
     margin: 20px 20px 50px
 }
+
+/* Pricing Section */
+
+#pricing{
+    padding: 100px;
+    text-align: center;
+}
+
+.pricing-coloumn{
+    padding: 3% 2%;
+}
+
+/* Call to Action */
+
+#cta{
+    text-align: center;
+    background-color: #ff4c68;
+}
+
+.cta-text{
+    font-size: 3rem;
+    color: #fff;
+    line-height: 1.5;
+    padding: 5% 12% 0% 12%; 
+}
+
+.cta-button{
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+/* Footer */
+
+#footer{
+    text-align: center;
+    padding: 7% 15%;
+}
+
+.comp-icons{
+    /* margin: 0.5% 0.8% 1.5% 0.8%; */
+    margin: 5%;
+}
+
+.copyright-text{
+    margin-top: 2.2%;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1028px){
+
+    #title{
+        text-align: center;
+    }
+
+    .title-image{
+        padding-top: 20px;
+        position: static;
+        transform: rotate(0);
+        width: 50%;
+    }
+}
+
